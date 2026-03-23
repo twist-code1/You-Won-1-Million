@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouWon1Mln</title>
+    <style>
+        body {
+            background-color: #4d4d4d;
+            height: 100vh;
+            margin: 0;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 40px;
+            margin: 0;
+        }
+
+        button {
+            position: absolute;
+            padding: 20px 40px;
+            font-size: 24px;
+            font-weight: bold;
+            background: rgb(10, 177, 10);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            color: white;
+            transition: 0.1s;
+            left: 50%;
+            top: 60%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1">YOU WON 1 MILLION $</h1>
+    <button id="button" onclick="scamFunc()" onmouseenter="runFunc()">CLAIM</button>
+
+    <script>
+        const body = document.body;
+        const button = document.getElementById("button");
+        const h1 = document.getElementById("h1");
+
+        function scamFunc() {
+            body.style.backgroundColor = "#b10a0a";
+            button.style.transition = "0s";
+            button.style.visibility = "hidden";
+            h1.textContent = "Error 404";
+            
+        }
+        function runFunc() {
+            const x = Math.random() * (window.innerWidth - 200);
+            const y = Math.random() * (window.innerHeight - 100);
+            button.style.left = x + "px";
+            button.style.top = y + "px";
+        }
+    </script>
+</body>
+</html>
