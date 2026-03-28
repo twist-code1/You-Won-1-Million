@@ -1,6 +1,6 @@
 # You Won 1 Million
 
-> **Mini project** — a troll button that runs away from your mouse.
+> **Mini project** - a troll button that runs away from your mouse.
 
 Just for fun and to practice event handling.
 
